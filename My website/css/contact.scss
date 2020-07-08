@@ -1,0 +1,314 @@
+$accent: rgb(1, 201, 61);
+$asdfasd :rgb(180, 54, 54);
+$inputColor : rgb(253, 253, 253);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+body{
+    background-image: linear-gradient(312deg, #7f58a3, #0d324d);
+    // background-image: linear-gradient(120deg, #e0c3fc 0%, #330867 100%);
+    height: 100vh;
+}
+
+h2{
+    color: #dddd;
+    font-family: montserrat;
+    font-size: 2.4em;
+    text-align: center;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+    background-color: rgba(5, 0, 0, 0.37);
+    grid-template-areas: '. nav .';
+    padding: 9px 20px;
+  }
+  nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__links{
+    display: flex;
+  }
+  .nav__link{
+    list-style-type: none;
+    margin-left: 40px;
+  }
+  .nav__link a:hover{
+    color: $accent;
+  }
+  .navbar-brand{
+    height: 3rem;
+  }
+  .nav__link a{
+    color: rgb(226, 226, 226);
+    font-family: montserrat;
+    font-size: 12pt;
+    font-weight: light;
+    letter-spacing: 3px;
+    text-decoration: none;
+    transition: color .3s ease;
+  }
+.formWrapper{
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+}
+form{
+    position: relative;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.521);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.name {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    input{
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        border: none;
+        outline: none;
+        color: $inputColor;
+        font-weight: 500;
+        background-color: inherit;
+    }
+    label{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        border-bottom: 1px solid #fff;
+        color: $inputColor;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            height: 100%;
+            width: 100%;
+            border-bottom: 2px solid $accent;
+            transform: translateX(-100%);
+            transition: transform .3s ease;
+        }
+        .content-name{
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            transition: all .3s ease;
+        }
+    }
+}
+.name input:focus{
+    background-color: rgba($color: #000000, $alpha: 0.1);
+}
+.name input:focus + .label-name .content-name,
+.name input:valid + .label-name .content-name{
+    transform: translateY(-25px);
+    font-size: 14px;
+    color: $accent;
+}
+.name input:focus + .label-name::after, 
+.name input:valid + .label-name::after{
+    transform: translateX(0);
+}
+
+.email{
+    height: 50px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    input{
+        height: 100%;
+        width: 100%;
+        border: none;
+        padding-top: 20px;
+        outline: none;
+        color: $inputColor;
+        font-weight: 500;
+        background-color: inherit;
+    }
+    label{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        border-bottom: 1px solid #fff;
+        color: $inputColor;
+        &::after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            bottom: -1px;
+            border-bottom: 2px solid $accent;
+            transform: translateX(-100%);
+            transition: all .3s ease;
+        }
+        .content-name{
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            transition: all .3s ease;
+        }
+    }
+}
+.email input:focus{
+    background-color: rgba($color: #000000, $alpha: 0.1);
+}
+.email input:focus + .label-name .content-name,
+.email input:valid + .label-name .content-name{
+    transform: translateY(-25px);
+    font-size: 14px;
+    color: $accent;
+}
+.email input:focus + label::after, 
+.email input:valid + label::after{
+    transform: translateX(0);
+}
+.message{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    textarea{
+        background-color: inherit;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        padding-top: 20px;
+        border: none;
+        resize: none;
+        outline: none;
+        color: $inputColor;
+        font-weight: 500;
+    }
+    label{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        border-bottom: 1px solid #fff;
+        color: $inputColor;
+        &::after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            bottom: -1px;
+            left: 0;
+            border-bottom: 3px solid $accent;
+            transform: translateX(-100%);
+            transition: all .3s ease;
+        }
+        .content-name{
+            position: absolute;
+            top: 20px;
+            left: 0;
+            transition: all .3s ease;
+        }
+    }
+}
+.message textarea:focus + .label-name .content-name,
+.message textarea:valid + .label-name .content-name{
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: $accent;
+}
+.message textarea:focus + .label-name::after,
+.message textarea:valid + .label-name::after{
+    transform: translateX(0);
+}
+.submit{
+    padding: 9px;
+    background-color: $accent;
+    border: 1px solid;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all .2s ease-out;
+    width: 5rem;
+    margin-left: auto;
+}
+.submit:hover{
+    background-color: rgb(1, 160, 49);
+    cursor: pointer;
+}
+
+@media (max-width: 800px){
+    form{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 766px) {
+    .navbar-brand{
+      transform: scale(.8);
+    }
+   .line{
+     width: 30px;
+     height: 3px;
+     background-color: rgb(218, 218, 218);
+     margin: 5px;
+     border-radius: 2px;
+   }
+   nav{
+     position: relative;
+   }
+   .hamburger{
+     cursor: pointer;
+     z-index: 4;
+     position: absolute;
+     right: 0;
+     transform: translateY(-2px);
+   }
+   .nav__links{
+     position: fixed;
+     margin: 0;
+     left: 0;
+     top: 0;
+     background-color: rgb(66, 71, 82);
+     height: 100vh;
+     width: 100%;
+     flex-direction: column;
+     justify-content: space-around;
+     z-index: 1;
+     clip-path: circle(100px at 90% -50%);
+     -webkit-clip-path: circle(100px at 90% -50%);
+     transition: all 1s ease-out;
+   }
+   .nav__links.open{
+       clip-path: circle(1200px at 90% -50%);
+       -webkit-clip-path: circle(1200px at 90% -50%);
+   }
+  }
+  @media only screen and (max-width: 330px){
+      h2{
+          font-size: 2em;
+      }
+      form{
+          height: 420px;
+      }
+  }

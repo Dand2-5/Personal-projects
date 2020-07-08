@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="./js/contact.js" defer></script>
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+        <a href="index.html"><img src="img/logo.png" alt="Doub" class="navbar-brand"></a>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul class="nav__links">
+            <li class="nav__link"> <a href="index.html">Home</a></li>
+            <li class="nav__link"> <a href="about.html">About me</a></li>
+            <li class="nav__link"> <a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="formWrapper">
+        <form action="" netlify>
+            <h2>Contact Us</h2>
+            <div class="name">
+                <input type="text" name="name" autocomplete="off" required>
+                <label for="name" class="label-name">
+                    <span class="content-name">Name</span>
+                </label>
+            </div>
+            <div class="ee">
+                <div class="email">
+                    <input type="text" name="email" class="e-input" required autocomplete="off" id="e-reg">
+                    <label for="email" class="label-name" id="e-label">
+                        <span class="content-name">
+                            Email
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="message">
+                <textarea name="message" required></textarea>
+                <label for="message" class="label-name">
+                    <span class="content-name">
+                        Message
+                    </span>
+                </label>
+            </div>
+            <button type="submit" class="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

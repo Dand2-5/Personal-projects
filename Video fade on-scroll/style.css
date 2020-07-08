@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(12, 11, 11);
+}
+.video {
+    height: 100vh;
+    width: 100%;
+}
+.video video {
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover;
+}
+.text {
+    height: 100vh;
+    color: #fff;
+    padding: 20px;
+    font-family: montserrat;
+}
+.text p {
+    padding: 20px;
+    letter-spacing: 2px;
+    line-height: 32px;
+}

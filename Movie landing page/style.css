@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 100px;
+  z-index: 1000;
+}
+
+header .logo {
+  max-width: 120px;
+}
+
+header .logo img {
+  max-width: 100%;
+}
+
+header .toggle {
+  max-width: 60px;
+  cursor: pointer;
+}
+
+header .toggle img {
+  max-width: 100%;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 100px;
+  background-image: url(img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .content {
+  max-width: 560px;
+}
+
+.banner .content h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.banner .content h2 span {
+  font-weight: 800;
+  color: #a02634;
+}
+
+.banner .content p {
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.5em;
+  color: #fff;
+  margin: 15px 0 35px;
+}
+
+.play {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.play img {
+  margin-right: 10px;
+  max-width: 50px;
+}
+
+.sci {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  text-decoration: none;
+}
+
+.sci li a img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.slide {
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 250px / 2);
+  background: url(img/joker.png);
+  width: 250px;
+  height: 150px;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-animation: animate 25s ease-in-out infinite;
+          animation: animate 25s ease-in-out infinite;
+}
+
+@-webkit-keyframes animate {
+  0%, 100% {
+    background-position: top;
+  }
+  45%, 55% {
+    background-position: bottom;
+  }
+}
+
+@keyframes animate {
+  0%, 100% {
+    background-position: top;
+  }
+  45%, 55% {
+    background-position: bottom;
+  }
+}
+/*# sourceMappingURL=style.css.map */

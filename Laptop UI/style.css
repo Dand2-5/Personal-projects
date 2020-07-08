@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat;
+}
+
+button {
+  font-family: montserrat;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-container, .nav-links, .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.logo {
+  font-weight: 400;
+  margin: 5px;
+}
+
+nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.nav-links {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: #5f5f79;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.cart {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.introduction {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
+  background: -webkit-gradient(linear, left top, right top, from(#494964), to(#6f6f89));
+  background: linear-gradient(to right, #494964, #6f6f89);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+  margin: 5px;
+  font-size: 22px;
+  color: #585772;
+}
+
+.cta {
+  padding: 50px 0 0 0;
+}
+
+.cta .cta-select {
+  border: 2px solid #c36cbb;
+  background: transparent;
+  color: #c36cbb;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cta .cta-add {
+  background: #c36cbb;
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  margin: 30px 0 0 30px;
+}
+
+.cover {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60vh;
+}
+
+.cover img {
+  height: 100%;
+  -webkit-filter: drop-shadow(0px 5px 3px black);
+          filter: drop-shadow(0px 5px 3px black);
+  -webkit-animation: drop 1.5s forwards;
+          animation: drop 1.5s forwards;
+}
+
+.big-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: .5;
+  height: 60%;
+}
+
+.medium-circle {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  z-index: -1;
+  opacity: .4;
+  height: 60%;
+}
+
+.small-circle {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  z-index: -1;
+}
+
+.laptop-select {
+  position: absolute;
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  right: 20%;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 100vw;
+  }
+  .presentation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 30px;
+  }
+  .intro-text p {
+    font-size: 18px;
+  }
+  .cta {
+    padding: 10px 0 0 10px;
+  }
+  .laptop-select {
+    bottom: 5%;
+    right: 50%;
+    width: 50%;
+    -webkit-transform: translate(50%, 5%);
+            transform: translate(50%, 5%);
+  }
+  .cover img {
+    height: 80%;
+  }
+  .small-circle, .medium-circle, .big-circle {
+    opacity: .2;
+  }
+}
+/*# sourceMappingURL=style.css.map */

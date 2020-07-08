@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    height: 100vh;
+    border: 20px solid black;
+    display: flex;
+	flex-direction: column;
+}
+.child1{
+    height: 200px;
+    background: rgb(39, 69, 134);
+
+    order: 1;
+}
+.child2{
+    width: 200px;
+    height: 200px;
+    background: rgb(172, 57, 53);
+}
+.child3{
+    width: 200px;
+    height: 200px;
+    background: rgb(149, 43, 140);
+}

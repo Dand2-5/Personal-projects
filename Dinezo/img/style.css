@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+.navbar{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+}
+.nav_links{
+    display: flex;
+}
+.nav_link{
+    margin-left: 1rem;
+    list-style-type: none;
+}
+.link{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(45, 43, 143);
+}

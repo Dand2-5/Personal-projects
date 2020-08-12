@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WordBeater</title>
+    <!-- <link rel="stylesheet" href="./Doub CSS/doub.css" /> -->
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .level-container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 auto;
+      }
+      .level-container select{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-dark text-white">
+    <header class="bg-secondary text-center p-3 mb-5">
+      <h1>WordBeater</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <p class="lead text-center">
+            Type the Given word within <span class="text-success" id="seconds">5</span> Seconds:
+          </p>
+          <div class="level-container">
+            <label for="lev">Levels</label>
+            <select name="lev"class="form-control" id="levels">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+          <h2 class="display-2 mb-5 text-center" id="current-word">hello</h2>
+          <input type="text" class="form-control form-control-lg" id="word-input" autofocus>
+          <div class="mt-3 text-center" style="height: 1rem;">
+            <h4 id="message"></h4>
+          </div>
+
+          <div class="row mt-5" style="margin: 0 auto;">
+            <div class="col-md-6">
+              <h3>Time left: <span id="time"></span></h3>
+            </div>
+            <div class="col-md-6">
+              <h3>Score: <span id="score">0</span></h3>
+            </div>
+            <div class="col-md-12">
+              <h3>High Score: <span id="highscore">0</span></h3>
+            </div>
+          </div>
+           <!-- Instruction -->
+           <div class="row mt-5">
+             <div class="col-md-12">
+               <div class="card card-body bg-secondary text-white">
+                 <h5>Instructions</h5>
+                 <p>
+                   Type each word in the given amount of seconds to score. To play again, just type the current word. Your score will reset.
+                 </p>
+               </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

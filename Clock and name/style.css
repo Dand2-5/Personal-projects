@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: montserrat;
+  background-color: black;
+  color: #fff;
+}
+time {
+  display: block;
+  font-size: 6rem;
+  padding: 1rem;
+}
+.container {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+.sec-container {
+  display: inline-flex;
+  width: 7rem;
+}
+/* #name{
+  text-decoration: none;
+} */

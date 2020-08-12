@@ -1,0 +1,24 @@
+{
+  "tweets": [
+    {
+      "content": "hello"
+    },
+    {
+      "content": "world"
+    }
+  ],
+  "people": [
+    {
+      "name": "Daniel",
+      "age": 18
+    },
+    {
+      "name": "Damilola",
+      "age": 18
+    },
+    {
+      "name": "Deborah",
+      "age": 16
+    }
+  ]
+}
